@@ -1,35 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
 }
-.landing{
+
+.main {
     display: flex;
     justify-content: center;
     height: 100vh;
+    background-color: #E1F7FF;
 }
-.landing_page{
+
+.main_page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}   
-.landing_page .title1{
+}
+
+.main_page .title1 {
     color: black;
     font-weight: bolder;
     font-size: 70px;
 }
-.landing_page .title2{
+
+.main_page .title2 {
     color: black;
     font-weight: bolder;
     font-size: 30px;
 }
-.landing_page img{
+
+.main_page img {
+
+    height: 400px;
+}
+
+/* landing page css */
+.landing {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    min-height: 100vh;
+ 
+  align-items: center;
+}
+
+.landing_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.landing_page .title1 {
+    color: black;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.landing_page .title2 {
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.landing_page img {
     /* background-color: black; */
     height: 380px;
 }
+
 .landing_page button{
     height: 60px;
     width: 200px;
@@ -40,9 +86,12 @@
     color: white;
     background-color: #0687E5;
     font-weight: bold;
+    
 }
-.landing_page button:hover{
+
+
+.landing_page button:hover {
     background-color: white;
     color: #0687E5;
-    cursor: pointer ;
+    cursor: pointer;
 }
