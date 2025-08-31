@@ -1,9 +1,11 @@
 import React from 'react'
 import { AnimatePresence } from 'framer-motion';
-import Landing from './components/landing'
-import Main from './components/main'
+import Landing from './pages/landing';
+import Main from './pages/main';
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import Login from './components/Login';
+import Login from './pages/Login';
+import Signup from './pages/Signup'
+
 function App() {
   return (
     <div>
@@ -12,7 +14,10 @@ function App() {
         <Routes>
         <Route path='/' element={<Main/>}/>
         <Route path='/landing'element={<Landing/>} />
-        <Route path='/login' element={<Login/>}/>
+        <Route path='/landing/login' element={<Login/>}/>
+        <Route path='/landing/signup' element={<Signup/>}/>
+        
+
       </Routes>
       </AnimatePresence>
       

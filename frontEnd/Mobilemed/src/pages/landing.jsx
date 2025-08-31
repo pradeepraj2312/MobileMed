@@ -30,8 +30,8 @@ function Landing() {
         <p className='title1' data-aos="fade-right">MobileMed</p>
         <p className='title2' data-aos="fade-left">Let’s get started</p>
 
-        <button className='login' data-aos="flip-up">Login</button>
-        <button className='signup' >Sign up</button>
+        <Link to={'./login'}><button className='login' data-aos="flip-up">Login</button></Link>
+        <Link to={'./signup'}><button className='signup' >Sign up</button></Link>
       </div>
     </div>
 
